@@ -1,0 +1,14 @@
+# Binaries for programs and plugins
+*.exe
+*.dll
+*.dylib
+
+vendor/
+
+*.out
+*.log
+*.test
+
+.idea/
+.env
+docker-compose.override.yml
