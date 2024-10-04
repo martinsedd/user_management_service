@@ -1,4 +1,4 @@
-CREATE TABLE users (
+CREATE TABLE IF NOT EXISTS users (
     id VARCHAR(36) PRIMARY KEY,
     first_name VARCHAR(50),
     last_name VARCHAR(50),
@@ -12,6 +12,4 @@ CREATE TABLE users (
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 );
 
-CREATE INDEX idx_users_phone_number ON users (phone_number);
-CREATE INDEX idx_users_role ON users (role);
-CREATE INDEX idx_users_is_active ON users (is_active);
+
